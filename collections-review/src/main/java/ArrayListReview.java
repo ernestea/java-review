@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 public class ArrayListReview {
     public static void main(String[] args) {
@@ -26,8 +23,8 @@ public class ArrayListReview {
         students2.add(new Student("Ronnie", 4));
 
         print(students);
-        print(students1);
-        print(students2);
+        printForward(students1);
+        printBackwards(students2);
 
 
     }
@@ -41,5 +38,25 @@ public class ArrayListReview {
         }
         list.forEach(student -> System.out.println(student));
         list.forEach(System.out::println);
+    }
+
+    static void printForward(List<Student> studentList) {
+        Iterator iterator = studentList.iterator();
+        //forward iteration
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        ListIterator<Student> listIterator = studentList.listIterator();
+        while(listIterator.hasNext()) {
+            System.out.println(listIterator.next());
+        }
+    }
+
+    static void printBackwards(List<Student> studentList) {
+        ListIterator<Student> listIterator = studentList.listIterator();
+        while(listIterator.hasPrevious()) {
+            System.out.println(listIterator.previous());
+        }
     }
 }
