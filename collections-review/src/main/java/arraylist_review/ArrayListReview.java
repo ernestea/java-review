@@ -1,3 +1,7 @@
+package arraylist_review;
+
+import model.Student;
+
 import java.util.*;
 
 public class ArrayListReview {
@@ -37,7 +41,6 @@ public class ArrayListReview {
         }
 
 
-
     }
 
     static void print(List<Student> list) {
@@ -59,15 +62,17 @@ public class ArrayListReview {
         }
 
         ListIterator<Student> listIterator = studentList.listIterator();
-        while(listIterator.hasNext()) {
+        while (listIterator.hasNext()) {
             System.out.println(listIterator.next());
         }
     }
 
     static void printBackwards(List<Student> studentList) {
         ListIterator<Student> listIterator = studentList.listIterator();
-        while(listIterator.hasPrevious()) {
+        while (listIterator.hasPrevious()) {
             System.out.println(listIterator.previous());
         }
     }
+
+
 }
