@@ -26,6 +26,17 @@ public class ArrayListReview {
         printForward(students1);
         printBackwards(students2);
 
+        Iterator<?> iterator = students.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("Printing with Iterator Backwards......");
+
+        while (((ListIterator<?>) iterator).hasPrevious()) {
+            System.out.println(((ListIterator<?>) iterator).previous());
+        }
+
+
 
     }
 
