@@ -22,7 +22,6 @@ public class AppleTest {
         apples.add(new Apple(Color.YELLOW, 199));
         apples.add(new Apple(Color.GREEN, 200));
         apples.add(new Apple(Color.RED, 500));
-
         Predicate<Apple> greenColorPredicate = (apple) -> apple.getColor() == Color.GREEN;
         List<Apple> greenApples = filterApples(apples, greenColorPredicate);
         System.out.println(greenApples);
