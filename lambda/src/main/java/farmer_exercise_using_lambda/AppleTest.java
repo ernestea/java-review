@@ -1,13 +1,10 @@
 package farmer_exercise_using_lambda;
 
-import farmer_exercise.Apple;
-import farmer_exercise.AppleGreenColorPredicate;
-import farmer_exercise.AppleHeavyPredicate;
-import farmer_exercise.Color;
+import farmer_exercise.apple.Apple;
+import farmer_exercise.apple.Color;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class AppleTest {

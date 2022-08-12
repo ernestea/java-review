@@ -1,4 +1,4 @@
-package farmer_exercise;
+package farmer_exercise.apple;
 
 public enum Color {
     GREEN,
