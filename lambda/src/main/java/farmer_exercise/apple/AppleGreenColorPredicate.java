@@ -1,4 +1,4 @@
-package farmer_exercise;
+package farmer_exercise.apple;
 
 public class AppleGreenColorPredicate implements ApplePredicate {
     @Override

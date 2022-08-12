@@ -1,6 +1,4 @@
-package farmer_exercise;
-
-import java.awt.*;
+package farmer_exercise.apple;
 
 public class Apple {
     Color color;

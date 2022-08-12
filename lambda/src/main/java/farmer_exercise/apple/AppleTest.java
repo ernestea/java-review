@@ -1,6 +1,8 @@
-package farmer_exercise;
+package farmer_exercise.apple;
 
-import java.awt.*;
+import farmer_exercise.behavior_parameterization.AppleFancyFormatter;
+import farmer_exercise.behavior_parameterization.AppleFormatter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +26,11 @@ public class AppleTest {
         prettyPrintApple(apples,new AppleGreenColorPredicate());
         prettyPrintApple(apples,new AppleHeavyPredicate());
 
+        prettyPrintAppleUsingFormatter(apples,new AppleFancyFormatter());
+
+        AppleFormatter formatter = (apple) -> {return "A " + apple.getColor() + " apple";};
+        prettyPrintAppleUsingFormatter(apples,formatter);
+
     }
 
     private static List<Apple> filterApples(List<Apple> apples, ApplePredicate predicate) {
@@ -42,6 +49,13 @@ public class AppleTest {
     private static void prettyPrintApple(List<Apple> inventory, ApplePredicate predicate) {
         for (Apple apple : inventory) {
             String output = predicate.prettify(apple);
+            System.out.println(output);
+        }
+    }
+
+    public static void prettyPrintAppleUsingFormatter(List<Apple> inventory, AppleFormatter formatter) {
+        for (Apple apple : inventory) {
+            String output = formatter.accept(apple);
             System.out.println(output);
         }
     }
