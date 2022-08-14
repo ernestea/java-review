@@ -1,4 +1,4 @@
-package farmer_exercise.functional_interfaces;
+package functional_interfaces;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package farmer_exercise.comparator_interface;
+package comparator_interface;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,7 +1,7 @@
 package farmer_exercise.apple;
 
-import farmer_exercise.behavior_parameterization.AppleFancyFormatter;
-import farmer_exercise.behavior_parameterization.AppleFormatter;
+import behavior_parameterization.AppleFancyFormatter;
+import behavior_parameterization.AppleFormatter;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package farmer_exercise.behavior_parameterization;
+package behavior_parameterization;
 
 import farmer_exercise.apple.Apple;
 

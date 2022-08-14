@@ -1,4 +1,4 @@
-package farmer_exercise.doublecolonoperator;
+package doublecolonoperator;
 
 import lombok.Getter;
 import lombok.Setter;

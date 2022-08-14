@@ -1,4 +1,4 @@
-package farmer_exercise.doublecolonoperator;
+package doublecolonoperator;
 
 public class Calculator {
     public static void findSum(int x, int y) {

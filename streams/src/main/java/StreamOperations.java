@@ -5,7 +5,24 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class StreamOperations {
-    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 4, 3, 3, 8);
+    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 4, 6, 12, 8);
+    List<String> listOfWords = Arrays.asList("JAVA","APPLE","FORD","DEVELOPER");
+
+    @Test
+    public void task() { //MAP
+        //Given a list of words, print the number of characters for each word.
+        listOfWords.stream()
+                .map(String::length)
+                .forEach(System.out::println);
+    }
+
+    @Test
+    public void example6() {//MAP
+        list.stream()
+                .map(number -> number * 2)
+                .filter(i -> i % 3 == 0)
+                .forEach(System.out::println);
+    }
 
     @Test
     public void example5() {//SKIP

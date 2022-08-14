@@ -1,4 +1,4 @@
-package farmer_exercise.comparator_interface;
+package comparator_interface;
 
 import static java.util.Comparator.*;
 import org.testng.annotations.Test;

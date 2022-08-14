@@ -1,4 +1,4 @@
-package farmer_exercise.doublecolonoperator;
+package doublecolonoperator;
 
 public class MyClass {
 
