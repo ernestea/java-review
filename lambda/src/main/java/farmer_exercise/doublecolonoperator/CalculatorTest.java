@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class CalculatorTest {
 
@@ -59,4 +60,15 @@ public class CalculatorTest {
         Consumer<Integer> consumer = System.out::println;
         consumer.accept(55);
     }
+    @Test
+    public void example7BiFunctionInterface() {
+        BiFunction<MyClass,Integer,Double> fn = MyClass::method1;
+        System.out.println(fn.apply(new MyClass(), 5));
+
+        Function<Integer,Double> fn1 = new MyClass()::method1;
+        System.out.println(fn1.apply(5));
+
+    }
 }
+
+
