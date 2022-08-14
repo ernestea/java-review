@@ -1,3 +1,5 @@
+package course;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
