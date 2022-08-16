@@ -1,4 +1,4 @@
-package farmer_exercise.functional_interfaces;
+package functional_interfaces;
 
 import org.testng.annotations.Test;
 
@@ -19,7 +19,7 @@ public class Examples {
     @Test
     public void example2PredicateInterface() {
         Predicate<Integer> lesserThan = integer -> integer < 18;
-        System.out.println(lesserThan.test(500));
+        System.out.println(lesserThan.test(500));//prints false
     }
 
     @Test
@@ -46,6 +46,7 @@ public class Examples {
         Double result = randomValue.get();
         System.out.println(result);
     }
+
 
 
 }
